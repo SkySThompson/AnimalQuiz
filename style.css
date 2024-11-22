@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('cute.gif'); /* Set gif as background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for text contrast */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+  }
+  
+  .quiz-title {
+    font-size: 2.5rem;
+    color: #ff69b4; /* Cute pink color */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  #question {
+    font-size: 1.8rem;
+    color: #333; /* Dark text for better contrast */
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .option-button {
+    background-color: #ff79c6;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .option-button:hover {
+    background-color: #ff45a7;
+    transform: scale(1.05);
+  }
+  
+  .timer-container {
+    margin-top: 20px;
+  }
+  
+  #timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff79c6; /* Timer color */
+  }
+  
+  .action-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .action-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .result-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .correct {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .wrong {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Fade-in animation for the quiz container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
